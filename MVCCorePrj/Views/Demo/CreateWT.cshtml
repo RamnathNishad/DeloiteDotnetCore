@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var cities = (List<SelectListItem>)ViewData["cities"];
+}
+
+
+<h3>Working with HTML Helpers </h3><hr/>
+@using(Html.BeginForm())
+{
+    <table class="table">
+        <tr>
+            <td>Ecode:</td>
+            <td>
+                @Html.TextBox("Ecode")
+            </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>
+                @Html.Password("Password")
+            </td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                @Html.RadioButton("gender","M")Male
+                @Html.RadioButton("gender", "F")Female
+            </td>
+        </tr>
+        <tr>
+            <td>Hobbies:</td>
+            <td>
+                @Html.CheckBox("hobbies",htmlAttributes:new {@value="singing"}) Singing
+                @Html.CheckBox("hobbies", htmlAttributes: new { @value = "dancing" }) Dancing
+                @Html.CheckBox("hobbies", htmlAttributes: new { @value = "painting" }) Painting
+            </td>
+        </tr>
+        <tr>
+            <td>Select City:</td>
+            <td>
+                @Html.DropDownList("city", cities)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" class="btn btn-warning" />
+            </td>
+            <td></td>
+        </tr>
+    </table>
+}

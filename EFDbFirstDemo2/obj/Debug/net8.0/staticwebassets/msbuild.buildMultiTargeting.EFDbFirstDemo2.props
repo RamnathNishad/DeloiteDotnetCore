@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EFDbFirstDemo2.props" />
+</Project>

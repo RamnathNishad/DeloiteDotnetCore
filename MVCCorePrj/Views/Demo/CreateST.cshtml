@@ -1,0 +1,47 @@
+﻿@model MVCCorePrj.Models.DataDisplay
+
+@{
+    ViewData["Title"] = "CreateST";
+}
+
+<h1>CreateST</h1>
+
+@using(Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>@Html.DisplayNameFor(modelItem=>modelItem.ecode)</td>
+            <td>@Html.TextBoxFor(modelItem=>modelItem.ecode)</td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayNameFor(modelItem => modelItem.password)</td>
+            <td>@Html.PasswordFor(modelItem => modelItem.password)</td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(modelItem=>modelItem.gender)
+            </td>
+            <td>
+                @Html.RadioButtonFor(modelItem => modelItem.gender, "M")Male
+                @Html.RadioButtonFor(modelItem => modelItem.gender, "F")Female                
+            </td>
+        </tr>
+        <tr>
+            @*TODO for Checkbox*@
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(modelItem=>modelItem.city)
+            </td>
+            <td>
+                @Html.DropDownListFor(modelItem=>modelItem.city,Model.cities)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit"/>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+}

@@ -1,0 +1,51 @@
+﻿@page
+@model HelloWorldRazorWebApp.Pages.HomeModel
+@{
+}
+
+
+<h1> Welcome to my Razor Application</h1>
+
+<h3>@Model.Message</h3>
+
+@* <table border="1" width="60%">
+    <tr>
+        <td>EmpCode:</td>
+        <td>@Model.EmpObj.Ecode</td>
+    </tr>
+    <tr>
+        <td>EmpName:</td>
+        <td>@Model.EmpObj.Ename</td>
+    </tr>
+    <tr>
+        <td>Salary:</td>
+        <td>@Model.EmpObj.Salary</td>
+    </tr>
+    <tr>
+        <td>Deptid:</td>
+        <td>@Model.EmpObj.Deptid</td>
+    </tr>
+</table>
+ *@
+
+<table border="1" width="60%">
+    <thead>
+        <tr>
+            <th>Ecode</th>
+            <th>Ename</th>
+            <th>Salary</th>
+            <th>Deptid</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.EmpList)
+        {
+            <tr>                
+                <td>@item.Ecode</td>
+                <td>@item.Ename</td>           
+                <td>@item.Salary</td>            
+                <td>@item.Deptid</td>
+            </tr>
+        }
+    </tbody>
+</table>

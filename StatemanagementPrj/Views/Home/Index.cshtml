@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    TempData.Keep();
+    //var y = TempData["y"].ToString();
+}
+
+
+<p>@ViewBag.Title</p>
+
+@* <p>Y=@y</p> *@
+
+<h1 class="c1">Welcome</h1>
+
+@using (Html.BeginForm("Display","Home"))
+{
+
+    <label>Enter your account no:</label>
+    @Html.TextBox("accnum")
+    <br/>   
+    <input type="submit" />
+}

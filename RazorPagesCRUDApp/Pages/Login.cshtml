@@ -1,0 +1,23 @@
+﻿@page
+@model RazorPagesCRUDApp.Pages.LoginModel
+@{
+}
+<h3>Login</h3>
+<form method="post">
+<table>
+    <tr>
+        <th>Username:</th>
+        <td><input asp-for="Username" value="" /></td>
+    </tr>
+    <tr>
+        <th>Password:</th>
+        <td><input asp-for="Password" value="" /></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" value="Login" /></td>
+    </tr>
+    
+</table>
+</form>
+<label style="color:red">@Model.ErrorMessage</label>

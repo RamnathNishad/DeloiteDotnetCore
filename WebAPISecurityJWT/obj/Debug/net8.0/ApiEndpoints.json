@@ -1,0 +1,180 @@
+[
+  {
+    "ContainingType": "WebAPISecurityJWT.Controllers.SampleAPIController",
+    "Method": "Get",
+    "RelativePath": "api/SampleAPI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebAPISecurityJWT.Models.Employee, WebAPISecurityJWT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPISecurityJWT.Controllers.SampleAPIController",
+    "Method": "Post",
+    "RelativePath": "api/SampleAPI",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Ecode",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Ename",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Salary",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Deptid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPISecurityJWT.Controllers.SampleAPIController",
+    "Method": "Authenticate",
+    "RelativePath": "api/SampleAPI/authenticate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPISecurityJWT.Controllers.SampleAPIController",
+    "Method": "Get",
+    "RelativePath": "api/SampleAPI/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPISecurityJWT.Models.Employee",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPISecurityJWT.Controllers.SampleAPIController",
+    "Method": "Put",
+    "RelativePath": "api/SampleAPI/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Ecode",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Ename",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Salary",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Deptid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPISecurityJWT.Controllers.SampleAPIController",
+    "Method": "Delete",
+    "RelativePath": "api/SampleAPI/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

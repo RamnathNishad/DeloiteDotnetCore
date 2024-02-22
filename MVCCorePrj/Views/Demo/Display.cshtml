@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var hobbies = (List<string>)ViewData["hobbies"];
+}
+<h3>Display</h3>
+
+Ecode:@ViewData["ecode"].ToString()
+<br/>
+Password:@ViewData["password"].ToString()
+<br />
+Gender:@ViewData["gender"].ToString()
+<br />
+Hobbies:<br/>
+@* <ul>
+@foreach (var item in hobbies)
+{
+    <li>@item</li>
+}
+</ul> *@
+<br />
+City:@ViewData["city"].ToString()
+<br />

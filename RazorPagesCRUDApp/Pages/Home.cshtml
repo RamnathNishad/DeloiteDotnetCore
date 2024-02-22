@@ -1,0 +1,30 @@
+﻿@page
+@model RazorPagesCRUDApp.Pages.HomeModel
+@{
+}
+
+<a asp-page="./Create">Create...</a> | 
+<a asp-page-handler="Logout">Logout</a>
+
+<h2>List of Employees</h2>
+<form method="post">
+<table border="1" width="60%">
+    <thead>
+        <tr>
+            <th>Ecode</th>
+            <th>Ename</th>
+            <th>Salary</th>
+            <th>Deptid</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.emps)
+        {                
+          <partial name="_EmployeeItem" model="item" />      
+        }
+    </tbody>
+</table>
+</form>
+<h3>Developed by Ramnath</h3>
+<img src="/images/1.jpg" width="300" height="350" />

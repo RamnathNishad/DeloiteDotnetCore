@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "fUfsVTUhlW5nMle3B5fgAHMCk2YzEbItg+GJ4YUDD5M=",
+  "Source": "WebAPISecurityJWT",
+  "BasePath": "_content/WebAPISecurityJWT",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
